@@ -4,14 +4,17 @@
 	  xmlns:h="http://java.sun.com/jsf/html">
 	  
 	  <h:head>
-	  		<title>Olá mundo</title>
+	  		<title>LOGIN PAGE</title>
 	  </h:head>
 	  
 <h:body>
 
-	 <h:inputText> </h:inputText>
-	 <h:outputText></h:outputText>
-	<h:form>TESTE</h:form>
+	 <h:form id = "formPessoa">TESTE<br/>
+	 Nome:<h:inputText id = "campoNome" value = "#{pessoaBean.nome}"/> <br/>
+	 Sobrenome:<h:inputText id = "campoSobrenome" value = "#{pessoaBean.sobrenome}"/><br/>
+	  <h:outputText value = "#{pessoaBean.nomeCompleto}"/><br/>
+	  <h:commandButton value = "mostrarNome" action="#{pessoaBean.mostrarNome}"/><br/>
+	</h:form>
 
 	  
 </h:body>
