@@ -9,11 +9,11 @@
 	  
 <h:body>
 
-	 <h:form id = "formPessoa">TESTE<br/>
+	 <h:form id = "formPessoa">Esn<br/>
 	 Nome:<h:inputText id = "campoNome" value = "#{pessoaBean.nome}"/> <br/>
 	
-	  <h:commandButton value = "Add Nome" action="#{pessoaBean.addNome}"/><br/>
 	  
+	  <h:commandButton binding="#{pessoaBean.commandButton}" value = "Add Nome" action="#{pessoaBean.addNome}"></h:commandButton><br/>
 	  
 	  <h:dataTable value="#{pessoaBean.nomes}" var = "nome">
 	  		<h:column>
